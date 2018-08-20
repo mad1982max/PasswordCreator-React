@@ -43,8 +43,8 @@ export default class App extends Component {
     render() {
         let {length, isLetters, isUpper, isNums, isSymbols, current, pswArr} = this.state;
         return (
-            <div className = 'App'>
-                <h2 className= 'header'> Password Creator </h2>
+            <div className = 'app'>
+                <div className= 'header'> Password Creator </div>
                 <Params inputChange = {this.inputChange}  params = {{length, isLetters, isUpper, isNums, isSymbols}} />
                 <ButtonGen gen = {this.generate}/>
                 <CurrentPsw current = {current} />
