@@ -29,7 +29,7 @@ export default class App extends Component {
     };
 
     generate = () => {
-        let {length, isLetters, isUpper, isNums, isSymbols, current, pswArr} = this.state;
+        let {length, isLetters, isUpper, isNums, isSymbols, current} = this.state;
         let pswGen = new PasswordGenerator(length, isLetters, isUpper, isNums, isSymbols);
         current = pswGen.gen();
 
